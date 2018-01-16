@@ -1,17 +1,24 @@
 library('vegan')
 
 input <- function(inputfile) {
+  print("A");
   pc <<- read.csv(inputfile, header = TRUE);
+  print("B");
 }
 
 
 run <- function() {
-  cn <<- colnames(pc);
-  cn <<- cn[2:length(cn)];
+  print("C");
+  cn <<- pc[,1];
+  print("D");
   pc <<- pc[,-1];
+  print("E");
   pc <<- apply(pc, 1, as.numeric);
+  print("F");
   pc <<- t(pc);
-  pc <<- as.matrix(vegdist(pc, method="euclidean"))
+  print("Computing Euclidean Distance...");
+  pc <<- as.matrix(vegdist(pc, method="euclidean"));
+  print("G");
 }
 
 output <- function(outputfile) {
