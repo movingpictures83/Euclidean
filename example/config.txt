@@ -1,0 +1,2 @@
+Prefix plugins/EuclideanDistance/example/
+Plugin EuclideanDistance inputfile abund.csv outputfile abund.euclidean.csv
