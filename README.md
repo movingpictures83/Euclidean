@@ -2,7 +2,8 @@
 # Language: R
 # Input: CSV (abundances)
 # Output: CSV (dissimilarities)
-# Tested with: PluMA 1.0, R 3.2.5
+# Tested with: PluMA 1.1, R 4.0.0
+# Dependency: vegan_2.5.6
 
 PluMA plugin that computes dissimilariy between two samples using Euclidean Distance as a measure.
 This plugin expects input in the form of a CSV file, where the rows are samples and the columns are community members.
