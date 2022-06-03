@@ -1,4 +1,4 @@
-# EuclideanDistance
+# Euclidean
 # Language: R
 # Input: CSV (abundances)
 # Output: CSV (dissimilarities)
